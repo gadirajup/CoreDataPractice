@@ -13,6 +13,7 @@
 		A471DFFA224C888C00AA30B0 /* CoreDataPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A471DFF8224C888C00AA30B0 /* CoreDataPractice.xcdatamodeld */; };
 		A471DFFC224C888E00AA30B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A471DFFB224C888E00AA30B0 /* Assets.xcassets */; };
 		A471DFFF224C888E00AA30B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A471DFFD224C888E00AA30B0 /* LaunchScreen.storyboard */; };
+		A471E007224C8C0C00AA30B0 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E006224C8C0C00AA30B0 /* CustomNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A471DFFB224C888E00AA30B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A471DFFE224C888E00AA30B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A471E000224C888E00AA30B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A471E006224C8C0C00AA30B0 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				A471DFF1224C888C00AA30B0 /* AppDelegate.swift */,
 				A471DFF3224C888C00AA30B0 /* ViewController.swift */,
+				A471E006224C8C0C00AA30B0 /* CustomNavigationController.swift */,
 				A471DFF5224C888C00AA30B0 /* Main.storyboard */,
 				A471DFFB224C888E00AA30B0 /* Assets.xcassets */,
 				A471DFFD224C888E00AA30B0 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A471E007224C8C0C00AA30B0 /* CustomNavigationController.swift in Sources */,
 				A471DFF4224C888C00AA30B0 /* ViewController.swift in Sources */,
 				A471DFFA224C888C00AA30B0 /* CoreDataPractice.xcdatamodeld in Sources */,
 				A471DFF2224C888C00AA30B0 /* AppDelegate.swift in Sources */,
