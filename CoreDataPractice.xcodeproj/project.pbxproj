@@ -8,19 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A471DFF2224C888C00AA30B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471DFF1224C888C00AA30B0 /* AppDelegate.swift */; };
-		A471DFF4224C888C00AA30B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471DFF3224C888C00AA30B0 /* ViewController.swift */; };
+		A471DFF4224C888C00AA30B0 /* CompaniesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471DFF3224C888C00AA30B0 /* CompaniesVC.swift */; };
 		A471DFF7224C888C00AA30B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A471DFF5224C888C00AA30B0 /* Main.storyboard */; };
 		A471DFFA224C888C00AA30B0 /* CoreDataPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A471DFF8224C888C00AA30B0 /* CoreDataPractice.xcdatamodeld */; };
 		A471DFFC224C888E00AA30B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A471DFFB224C888E00AA30B0 /* Assets.xcassets */; };
 		A471DFFF224C888E00AA30B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A471DFFD224C888E00AA30B0 /* LaunchScreen.storyboard */; };
 		A471E007224C8C0C00AA30B0 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E006224C8C0C00AA30B0 /* CustomNavigationController.swift */; };
 		A471E00A224C902C00AA30B0 /* UIColor+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E009224C902C00AA30B0 /* UIColor+theme.swift */; };
+		A471E00D224DE45E00AA30B0 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E00C224DE45E00AA30B0 /* Company.swift */; };
+		A471E012224DE6ED00AA30B0 /* CreateCompanyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E011224DE6ED00AA30B0 /* CreateCompanyVC.swift */; };
+		A471E014224DE8A900AA30B0 /* UINavigationController+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E013224DE8A900AA30B0 /* UINavigationController+theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A471DFEE224C888C00AA30B0 /* CoreDataPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471DFF1224C888C00AA30B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A471DFF3224C888C00AA30B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A471DFF3224C888C00AA30B0 /* CompaniesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesVC.swift; sourceTree = "<group>"; };
 		A471DFF6224C888C00AA30B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A471DFF9224C888C00AA30B0 /* CoreDataPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataPractice.xcdatamodel; sourceTree = "<group>"; };
 		A471DFFB224C888E00AA30B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		A471E000224C888E00AA30B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A471E006224C8C0C00AA30B0 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		A471E009224C902C00AA30B0 /* UIColor+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+theme.swift"; sourceTree = "<group>"; };
+		A471E00C224DE45E00AA30B0 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		A471E011224DE6ED00AA30B0 /* CreateCompanyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyVC.swift; sourceTree = "<group>"; };
+		A471E013224DE8A900AA30B0 /* UINavigationController+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +66,12 @@
 		A471DFF0224C888C00AA30B0 /* CoreDataPractice */ = {
 			isa = PBXGroup;
 			children = (
+				A471E00E224DE49600AA30B0 /* Models */,
+				A471E00F224DE4A800AA30B0 /* Views */,
+				A471E010224DE4AF00AA30B0 /* Controllers */,
 				A471E00B224C903700AA30B0 /* Extensions */,
 				A471E008224C8FFB00AA30B0 /* Custom Classes */,
 				A471DFF1224C888C00AA30B0 /* AppDelegate.swift */,
-				A471DFF3224C888C00AA30B0 /* ViewController.swift */,
 				A471DFF5224C888C00AA30B0 /* Main.storyboard */,
 				A471DFFB224C888E00AA30B0 /* Assets.xcassets */,
 				A471DFFD224C888E00AA30B0 /* LaunchScreen.storyboard */,
@@ -85,8 +93,33 @@
 			isa = PBXGroup;
 			children = (
 				A471E009224C902C00AA30B0 /* UIColor+theme.swift */,
+				A471E013224DE8A900AA30B0 /* UINavigationController+theme.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A471E00E224DE49600AA30B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A471E00C224DE45E00AA30B0 /* Company.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A471E00F224DE4A800AA30B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A471E010224DE4AF00AA30B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A471DFF3224C888C00AA30B0 /* CompaniesVC.swift */,
+				A471E011224DE6ED00AA30B0 /* CreateCompanyVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,10 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A471E007224C8C0C00AA30B0 /* CustomNavigationController.swift in Sources */,
-				A471DFF4224C888C00AA30B0 /* ViewController.swift in Sources */,
+				A471E014224DE8A900AA30B0 /* UINavigationController+theme.swift in Sources */,
+				A471E012224DE6ED00AA30B0 /* CreateCompanyVC.swift in Sources */,
+				A471DFF4224C888C00AA30B0 /* CompaniesVC.swift in Sources */,
 				A471DFFA224C888C00AA30B0 /* CoreDataPractice.xcdatamodeld in Sources */,
 				A471E00A224C902C00AA30B0 /* UIColor+theme.swift in Sources */,
 				A471DFF2224C888C00AA30B0 /* AppDelegate.swift in Sources */,
+				A471E00D224DE45E00AA30B0 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
