@@ -96,7 +96,20 @@ extension CompaniesVC {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "\(companies[indexPath.row].name ?? " ")"
+        
+        let company = companies[indexPath.row]
+        
+        if let name = company.name, let founded = company.founded {
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MMM dd, yyyy"
+            let foundedCustomDate = dateFormatter.string(from: founded)
+            
+            cell.textLabel?.text = "\(name) - \(foundedCustomDate)"
+        } else {
+            cell.textLabel?.text = company.name
+        }
+        
         return cell
     }
     

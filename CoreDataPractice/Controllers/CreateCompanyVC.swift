@@ -19,11 +19,19 @@ class CreateCompanyVC: UIViewController {
     var delegate: CreateCompanyControllerDelegate?
     let nameLabel = UILabel()
     let nameTextField = UITextField()
+
     var company: Company? {
         didSet {
             nameTextField.text = company?.name
         }
     }
+    
+    let datePicker: UIDatePicker = {
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        datePicker.translatesAutoresizingMaskIntoConstraints = false
+        return datePicker
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +51,15 @@ class CreateCompanyVC: UIViewController {
         
         setupNameLabel()
         setupNameTextField()
+        setupDatePicker()
+    }
+    
+    fileprivate func setupDatePicker() {
+        view.addSubview(datePicker)
+        
+        datePicker.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 0).isActive = true
+        datePicker.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        datePicker.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
     }
     
     fileprivate func setupNavigationBar() {
@@ -57,8 +74,10 @@ class CreateCompanyVC: UIViewController {
     
     fileprivate func createCompany() {
         let context = CoreDataManager.shared.persistentContainer.viewContext
+        
         let company = NSEntityDescription.insertNewObject(forEntityName: "Company", into: context)
         company.setValue(nameTextField.text, forKey: "name")
+        company.setValue(datePicker.date, forKey: "founded")
         
         do {
             try context.save()
