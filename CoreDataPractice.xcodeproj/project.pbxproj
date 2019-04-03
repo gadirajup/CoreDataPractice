@@ -18,6 +18,7 @@
 		A471E00D224DE45E00AA30B0 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E00C224DE45E00AA30B0 /* Company.swift */; };
 		A471E012224DE6ED00AA30B0 /* CreateCompanyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E011224DE6ED00AA30B0 /* CreateCompanyVC.swift */; };
 		A471E014224DE8A900AA30B0 /* UINavigationController+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E013224DE8A900AA30B0 /* UINavigationController+theme.swift */; };
+		A471E04722551CE200AA30B0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471E04622551CE200AA30B0 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A471E00C224DE45E00AA30B0 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		A471E011224DE6ED00AA30B0 /* CreateCompanyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyVC.swift; sourceTree = "<group>"; };
 		A471E013224DE8A900AA30B0 /* UINavigationController+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+theme.swift"; sourceTree = "<group>"; };
+		A471E04622551CE200AA30B0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				A471E00B224C903700AA30B0 /* Extensions */,
 				A471E008224C8FFB00AA30B0 /* Custom Classes */,
 				A471DFF1224C888C00AA30B0 /* AppDelegate.swift */,
+				A471E04622551CE200AA30B0 /* CoreDataManager.swift */,
 				A471DFF5224C888C00AA30B0 /* Main.storyboard */,
 				A471DFFB224C888E00AA30B0 /* Assets.xcassets */,
 				A471DFFD224C888E00AA30B0 /* LaunchScreen.storyboard */,
@@ -199,6 +202,7 @@
 				A471DFF4224C888C00AA30B0 /* CompaniesVC.swift in Sources */,
 				A471DFFA224C888C00AA30B0 /* CoreDataPractice.xcdatamodeld in Sources */,
 				A471E00A224C902C00AA30B0 /* UIColor+theme.swift in Sources */,
+				A471E04722551CE200AA30B0 /* CoreDataManager.swift in Sources */,
 				A471DFF2224C888C00AA30B0 /* AppDelegate.swift in Sources */,
 				A471E00D224DE45E00AA30B0 /* Company.swift in Sources */,
 			);
